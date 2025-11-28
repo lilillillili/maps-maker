@@ -177,7 +177,7 @@ class ExcelToGoogleMap:
         print(f"🎉 처리 완료: 성공 {success_count}개, 실패 {fail_count}개")
         return success_count > 0
 
-    def generate_html(self, output_path="KESSIA_회원사_지도_구글.html"):
+    def generate_html(self, output_path="회원사_지도_구글.html"):
         """구글 지도와 테이블이 포함된 HTML 파일을 생성합니다."""
         if not self.company_locations:
             print("❌ 처리된 위치 데이터가 없어 HTML을 생성할 수 없습니다.")
@@ -204,7 +204,7 @@ class ExcelToGoogleMap:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KESSIA 회원사 위치 지도 (Google Maps Ver.)</title>
+    <title>회원사 위치 지도 (Google Maps Ver.)</title>
     <style>
         body {{ 
             font-family: 'Malgun Gothic', Arial, sans-serif; 
@@ -314,7 +314,7 @@ class ExcelToGoogleMap:
 </head>
 <body>
     <div class="header">
-        <h1>🏢 KESSIA 회원사 위치 지도</h1>
+        <h1>🏢회원사 위치 지도</h1>
         <p style="margin: 5px 0; opacity: 0.9;">Google Maps API 기반 정확한 위치 정보</p>
         <p style="margin: 0; font-size: 14px; opacity: 0.8;">총 {len(self.company_locations)}개 회원사</p>
     </div>
@@ -467,7 +467,7 @@ class ExcelToGoogleMap:
 
     def run(self):
         """전체 프로세스를 실행합니다."""
-        print("🚀 KESSIA 회원사 지도 생성 프로그램 (Google Maps Ver.)")
+        print("🚀 회원사 지도 생성 프로그램 (Google Maps Ver.)")
         print("=" * 60)
         
         if not self.load_excel():
@@ -483,7 +483,7 @@ class ExcelToGoogleMap:
 # --- 실행 부분 ---
 if __name__ == "__main__":
     # 1. 엑셀/CSV 파일 경로를 지정하세요.
-    excel_file = "방문 회원사 목록 DB_20250805.xlsx"
+    excel_file = "회원사 목록_업데이트.xlsx"
     
     # 2. 여기에 발급받은 구글 API 키를 입력하세요.
     google_api_key = "YOUR_GOOGLE_API_KEY"

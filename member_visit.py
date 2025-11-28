@@ -477,7 +477,7 @@ class CompanyInfoCollector:
 # 사용 방법
 if __name__ == "__main__":
     # 파일 경로 설정
-    excel_file_path = "방문 회원사 목록 DB_20250805.xlsx"
+    excel_file_path = "회원사 목록.xlsx"
     
     # 컬렉터 실행
     collector = CompanyInfoCollector(excel_file_path)
